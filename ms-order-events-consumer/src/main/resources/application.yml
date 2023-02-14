@@ -1,0 +1,20 @@
+server:
+  port: 8083
+kafka:
+  topic: new-order
+spring:
+  application:
+    name: ms-order-events-consumer
+  kafka:
+    properties:
+      bootstrap-servers: localhost:9092
+      schema:
+        registry:
+          url: http://127.0.0.1:8081
+    consumer:
+      group-id: ms-order-topic-user
+      auto-offset-reset: latest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+      properties:
+        specific.avro.reader: true

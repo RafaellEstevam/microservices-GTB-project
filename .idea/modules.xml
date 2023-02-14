@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ms-BTG project.iml" filepath="$PROJECT_DIR$/.idea/ms-BTG project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-customer/ms-customer.iml" filepath="$PROJECT_DIR$/ms-customer/ms-customer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-order/ms-order.iml" filepath="$PROJECT_DIR$/ms-order/ms-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-order-events-consumer/ms-order-events-consumer.iml" filepath="$PROJECT_DIR$/ms-order-events-consumer/ms-order-events-consumer.iml" />
+    </modules>
+  </component>
+</project>

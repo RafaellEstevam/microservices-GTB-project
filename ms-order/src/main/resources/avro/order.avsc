@@ -1,0 +1,35 @@
+{
+  "name": "OrderAvro",
+  "type": "record",
+  "namespace": "com.project.msorder.config.avro",
+  "fields": [
+    {
+      "name": "customerId",
+      "type":"int"
+    },
+    {
+      "name": "items",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "ItemAvro" ,
+          "type" : "record",
+          "fields" : [
+            {
+              "name" :"product",
+              "type": "string"
+            },
+            {
+              "name": "quantity",
+              "type": "int"
+            },
+            {
+              "name": "price",
+              "type": "float"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

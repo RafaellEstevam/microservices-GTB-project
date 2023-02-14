@@ -1,0 +1,30 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: ms-order
+  kafka:
+    producer:
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      group-id: ms-order-topic-user
+      bootstrap-servers: localhost:9092
+    properties:
+      auto:
+        register:
+          schemas: true
+      schema:
+        registry:
+          url: http://127.0.0.1:8081
+auto:
+  create:
+    topics:
+      enable: true
+topic:
+  name:
+    producer: new-order
+
+
+
+
+
