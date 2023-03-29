@@ -28,7 +28,6 @@ public class KafkaUseCase {
                 .build();
 
         kafkaTemplate.send(topic, orderAvro);
-        log.info("{}",orderAvro);
+        log.info("c=KafkaUseCase, m=producer, orderAvro={}",orderAvro);
     }
-
 }

@@ -1,9 +1,9 @@
 package com.GTB.msordereventsconsumer.domain.usecase;
 
-import com.GTB.msordereventsconsumer.config.avro.OrderAvro;
 import com.GTB.msordereventsconsumer.config.avro.translator.ItemAvroTranslator;
 import com.GTB.msordereventsconsumer.domain.dataprovider.MsOrderDBDataProvider;
 import com.GTB.msordereventsconsumer.domain.model.Order;
+import com.project.msorder.config.avro.OrderAvro;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;

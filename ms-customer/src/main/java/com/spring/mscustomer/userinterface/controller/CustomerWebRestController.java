@@ -56,7 +56,7 @@ public class CustomerWebRestController {
     }
 
     @PatchMapping("/{id}")
-    public ResponseEntity<Void>pathUpdate(@PathVariable Long id, @RequestBody CustomerUpdateRequest customerUpdateRequest){
+    public ResponseEntity<Void>patchUpdate(@PathVariable Long id, @RequestBody CustomerUpdateRequest customerUpdateRequest){
         Customer customer = customerTranslator.execute(customerUpdateRequest);
         updateCustomerUseCase.execute(id, customer);
 

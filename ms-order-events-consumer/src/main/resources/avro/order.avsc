@@ -1,7 +1,7 @@
 {
   "name": "OrderAvro",
   "type": "record",
-  "namespace": "com.GTB.msordereventsconsumer.config.avro",
+  "namespace": "com.project.msorder.config.avro",
   "fields": [
     {
       "name": "customerId",
