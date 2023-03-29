@@ -28,6 +28,6 @@ public class KafkaUseCase {
                 .build();
 
         msOrderDBDataProvider.save(order);
-        log.info("{}", order);
+        log.info("c=KafkaUseCase, m=consumer, order={}", order);
     }
 }
